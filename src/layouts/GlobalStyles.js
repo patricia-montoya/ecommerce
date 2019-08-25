@@ -8,7 +8,6 @@ const Globals = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    background: ${setColor.lighGray}
   }
 
   body {
