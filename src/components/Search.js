@@ -10,7 +10,7 @@ const Search = (props) => {
 }
 
 const SearchInput = styled.input`
-    width: 20%; 
+    width: 30%; 
     border: 1px solid ${setColor.darkGray};
     border-radius: 4px;
     padding: ${setRem()};

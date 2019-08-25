@@ -1,6 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
-import { setRem, setIcon } from '../styles'
 import MainLayout from '../layouts/MainLayout'
 import SearchInput from '../components/Search' 
 import ItemList from '../components/ItemList'
