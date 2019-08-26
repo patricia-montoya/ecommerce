@@ -39,6 +39,11 @@ const Layout = styled.div`
   padding: 0 0 ${setRem(60)} ${setRem(40)};
 }
 
+.general-check-icon {
+  color: ${setColor.mustard};
+  margin-left: ${setRem(35)};
+}
+
 
 `
 
