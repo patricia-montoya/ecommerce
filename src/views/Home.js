@@ -10,7 +10,7 @@ const Home = (props) => {
   return (
     <>
       <MainLayout>
-        <FontAwesomeIcon icon={setIcon.check} size="3x" className="general-check-icon"/>
+          <FontAwesomeIcon icon={setIcon.check} size="3x" className="general-check-icon"/>
           <SearchInput position="absolute" top="0" right="0" width="30%"/>
           <ItemList className="items-container"/>
           <FontAwesomeIcon icon={setIcon.plus} className="add-icon" size="5x"/>

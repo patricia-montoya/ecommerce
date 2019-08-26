@@ -12,12 +12,12 @@ const ToggleButtons = () => {
         <FontAwesomeIcon icon={setIcon.toggle} size="3x" className="toggle-btn special" flip="horizontal"/>        
       </div>
       <div className="toogle-content toggle-icon">
-        <FontAwesomeIcon icon={setIcon.likes} size="3x"/>
-        <FontAwesomeIcon icon={setIcon.toggle} size="3x" className="toggle-btn" flip="horizontal"/>        
-      </div>
-      <div className="toogle-content toggle-icon">
         <FontAwesomeIcon icon={setIcon.calendar} size="3x"/>
         <FontAwesomeIcon icon={setIcon.toggle} size="3x" className="toggle-btn special" flip="horizontal"/>        
+      </div>
+      <div className="toogle-content toggle-icon">
+        <FontAwesomeIcon icon={setIcon.likes} size="3x"/>
+        <FontAwesomeIcon icon={setIcon.toggle} size="3x" className="toggle-btn" flip="horizontal"/>        
       </div>
     </ToggleBtns>
   )
