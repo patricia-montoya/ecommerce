@@ -8,7 +8,7 @@ const ToggleButtons = () => {
   return (
     <ToggleBtns>
       <div className="toogle-content">
-        <img src={SaleImg} className="sales-img toggle-icon"/>
+        <img src={SaleImg} className="sales-img toggle-icon" alt="Sales icon"/>
         <FontAwesomeIcon icon={setIcon.toggle} size="3x" className="toggle-btn special" flip="horizontal"/>        
       </div>
       <div className="toogle-content toggle-icon">

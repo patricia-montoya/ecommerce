@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { setRem, setIcon, setColor } from '../styles'
+import { setRem, setColor } from '../styles'
 import Logo from '../assets/Logo.jpg'
 
 import GlobalStyles from './GlobalStyles'
@@ -42,8 +42,8 @@ const Layout = styled.div`
 .general-check-icon {
   color: ${setColor.mustard};
   margin-left: ${setRem(35)};
+  cursor: pointer;
 }
-
 
 `
 

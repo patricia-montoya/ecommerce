@@ -1,8 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
 import MainLayout from '../layouts/MainLayout'
 import { EmptyBox } from './Styled/EmptyPage'
-import { setColor, setIcon } from '../styles'
+import { setIcon } from '../styles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Messages = () => {

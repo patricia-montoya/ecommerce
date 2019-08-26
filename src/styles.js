@@ -1,6 +1,8 @@
 import { faHome, faEnvelope, faStar, faCog, faUser, faTruck, faHeart, faCalendarAlt, 
          faCheckCircle, faPaperPlane, faPlusCircle, faLightbulb, faSearch, faChevronDown, faEllipsisV, faToggleOn } from '@fortawesome/free-solid-svg-icons'
 
+import { faCheckCircle as faUnChecked} from '@fortawesome/free-regular-svg-icons'
+
 export const setColor = {
   black: '#000000',
   red: '#e74b4b',
@@ -38,5 +40,6 @@ export const setIcon = {
   search: faSearch,
   arrowDown: faChevronDown,
   options: faEllipsisV,
-  toggle: faToggleOn
+  toggle: faToggleOn,
+  unCheck: faUnChecked
 }

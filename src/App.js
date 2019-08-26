@@ -16,7 +16,6 @@ function Routes() {
   </>
 }
 
-
 function App() {
   return (
     <Router>

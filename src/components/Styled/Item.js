@@ -14,6 +14,7 @@ export const ItemBox = styled.div`
   .item-check {
     padding: ${setRem(40)} ${setRem(20)} ${setRem(20)} ${setRem(20)};
     color: ${setColor.mustard};
+    cursor: pointer;
   }
 
   .item-content {

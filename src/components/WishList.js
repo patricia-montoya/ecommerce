@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import MainLayout from '../layouts/MainLayout'
 import { EmptyBox } from './Styled/EmptyPage'
 import { setIcon } from '../styles'

@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { setColor, setRem, setIcon } from '../styles'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { setColor, setRem } from '../styles'
 
 const Search = (props) => {
     return (
