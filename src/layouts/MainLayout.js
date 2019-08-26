@@ -1,19 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import { setRem, setIcon, setColor } from '../styles'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Logo from '../assets/Logo.jpg'
+
 import GlobalStyles from './GlobalStyles'
 import NavigationBar from './NavigationBar'
 
 const MainLayout = (props) => {
   return (
     <Layout>
+      <img src={Logo} className="img-logo" alt="Logo"/>
       <GlobalStyles />
       <NavigationBar />
       <main className="main-content">
         { props.children }
-      </main> 
-      <FontAwesomeIcon icon={setIcon.plus} className="add-icon" size="5x"/>     
+      </main>
     </Layout>
   )
 }
@@ -30,9 +31,12 @@ const Layout = styled.div`
 .add-icon {
   color: ${setColor.mustard};
   position: absolute;
-  right: ${setRem(60)};
-  top: ${setRem(560)}
+  right: 0;
+  top: ${setRem(410)}
+}
 
+.img-logo {
+  padding: 0 0 ${setRem(60)} ${setRem(40)};
 }
 
 

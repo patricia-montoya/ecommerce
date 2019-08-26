@@ -1,5 +1,5 @@
 import { faHome, faEnvelope, faStar, faCog, faUser, faTruck, faHeart, faCalendarAlt, 
-         faCheckCircle, faPaperPlane, faPlusCircle, faLightbulb, faSearch, faChevronDown, faEllipsisV } from '@fortawesome/free-solid-svg-icons'
+         faCheckCircle, faPaperPlane, faPlusCircle, faLightbulb, faSearch, faChevronDown, faEllipsisV, faToggleOn } from '@fortawesome/free-solid-svg-icons'
 
 export const setColor = {
   black: '#000000',
@@ -9,7 +9,8 @@ export const setColor = {
   mainBlue: '#002533',
   lighGray: '#eeeeee',
   mainGray: '#e6e6e6',
-  darkGray: '#999999'
+  mediumGray: '#bfbfbf',
+  darkGray: '#666666'
 }
 
 export const setFont = {
@@ -35,5 +36,6 @@ export const setIcon = {
   lightbulb: faLightbulb,
   search: faSearch,
   arrowDown: faChevronDown,
-  options: faEllipsisV
+  options: faEllipsisV,
+  toggle: faToggleOn
 }

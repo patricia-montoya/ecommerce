@@ -7,7 +7,7 @@ const NavigationBar = () => {
   return (
     <NavBar>
       <ul className="nav-list">
-        <li className="nav-list-item">
+        <li className="nav-list-item home">
           <FontAwesomeIcon icon={setIcon.home} size="lg"/>
           <label className="nav-item-label">Home</label>
         </li>
@@ -66,6 +66,11 @@ const NavBar = styled.nav`
       font-size: ${setRem(11)};
       text-align: center;
       font-weight: bold;
+    }
+
+    .home {
+      background: ${setColor.mainBlue};
+      color: ${setColor.white};
     }
 
     svg {

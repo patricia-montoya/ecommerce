@@ -11,7 +11,7 @@ const Globals = createGlobalStyle`
   }
 
   body {
-    margin: ${setRem(20)};
+    margin: ${setRem(50)};
     height: 100vh;
     background: ${setColor.mainGray};
     ${setFont.main}
