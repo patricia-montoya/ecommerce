@@ -7,15 +7,15 @@ import SaleImg from '../assets/Sale.JPG'
 const ToggleButtons = () => {
   return (
     <ToggleBtns>
-      <div className="toogle-sales">
-        <img src={SaleImg} className="sales-img"/>
+      <div className="toogle-content">
+        <img src={SaleImg} className="sales-img toggle-icon"/>
         <FontAwesomeIcon icon={setIcon.toggle} size="3x" className="toggle-btn special" flip="horizontal"/>        
       </div>
-      <div className="toogle-likes">
+      <div className="toogle-content toggle-icon">
         <FontAwesomeIcon icon={setIcon.likes} size="3x"/>
         <FontAwesomeIcon icon={setIcon.toggle} size="3x" className="toggle-btn" flip="horizontal"/>        
       </div>
-      <div className="toogle-sales">
+      <div className="toogle-content toggle-icon">
         <FontAwesomeIcon icon={setIcon.calendar} size="3x"/>
         <FontAwesomeIcon icon={setIcon.toggle} size="3x" className="toggle-btn special" flip="horizontal"/>        
       </div>
@@ -26,18 +26,26 @@ const ToggleButtons = () => {
 const ToggleBtns = styled.div`
   color: ${setColor.darkGray};
 
+  .toogle-content {
+    padding-bottom: ${setRem()};
+  }
+
+  .toggle-icon {
+    margin-left: ${setRem(20)};
+  }
+
   .toggle-btn {
     color: ${setColor.mainBlue};
-    margin-left: ${setRem(100)};
+    margin-left: ${setRem(80)};
   }
 
   .special {
-    margin-left: ${setRem(105.5)};
+    margin-left: ${setRem(85.5)};
   }
 
   .sales-img {
-    height: 48px;
-    width: 48px;
+    height: ${setRem(48)};
+    width: ${setRem(48)};
   }
 
 `

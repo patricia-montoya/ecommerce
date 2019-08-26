@@ -10,6 +10,7 @@ export const setColor = {
   lighGray: '#eeeeee',
   mainGray: '#e6e6e6',
   mediumGray: '#bfbfbf',
+  mediumDarkGray: '#8c8c8c',
   darkGray: '#666666'
 }
 

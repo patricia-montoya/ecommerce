@@ -32,7 +32,7 @@ const Layout = styled.div`
   color: ${setColor.mustard};
   position: absolute;
   right: 0;
-  top: ${setRem(410)}
+  top: ${setRem(490)}
 }
 
 .img-logo {

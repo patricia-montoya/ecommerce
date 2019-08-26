@@ -15,14 +15,14 @@ const Filters = () => {
       <ToggleButtons />
       <div className="filter-horizontal-line"></div> 
       <span className="filter-state-span">Status</span>     
-      <SearchInput width="60%"/>
+      <SearchInput width="70%"/>
       <div className="filter-state">DELIVERED</div>
     </FiltersContainer>
   )
 }
 
 const FiltersContainer = styled.aside`
-  border-right: 1px solid ${setColor.darkGray};
+  border-right: 1px solid ${setColor.mediumGray};
   width: ${setRem(250)};
   position: relative;
   left: 0;
@@ -34,9 +34,9 @@ const FiltersContainer = styled.aside`
   }
 
   .filter-horizontal-line {
-    margin: ${setRem(20)} 0 ${setRem(20)} 0;
-    border-bottom: 1px solid ${setColor.darkGray};
-    width: 85%;
+    margin: ${setRem(20)} 0 ${setRem(20)} ${setRem(20)};
+    border-bottom: 1px solid ${setColor.mediumGray};
+    width: 70%;
   }
 
   .filter-state-span {
@@ -48,7 +48,7 @@ const FiltersContainer = styled.aside`
     color: ${setColor.black};
     padding: ${setRem(15)};
     background: ${setColor.white};
-    width: 60%;
+    width: 70%;
     font-weight: bold;
     margin-top: ${setRem(15)};
     text-align: center;

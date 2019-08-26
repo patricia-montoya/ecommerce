@@ -55,7 +55,7 @@ const NavBar = styled.nav`
     .nav-list-item {
         display: flex;
         justify-content: center;
-        padding: 10px;
+        padding: ${setRem(10)};
         width: 20%;
         display: inline-block;
     }

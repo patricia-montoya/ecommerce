@@ -18,7 +18,6 @@ const ItemsContainer = styled.div`
     position: absolute;
     top: ${setRem(76)};
     right: 0;
-    /* border: 1px solid green; */
 
 `
 
