@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { setColor, setRem } from '../styles'
+import { setColor, setRem } from '../../styles'
 
 export const ItemBox = styled.div`
   font-size: ${setRem(14)};

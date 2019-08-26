@@ -1,5 +1,5 @@
 import React from 'react'
-import { ItemBox } from './ItemStyled'
+import { ItemBox } from './Styled/Item'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { setColor, setIcon, setRem } from '../styles'
