@@ -32,7 +32,8 @@ const Layout = styled.div`
   color: ${setColor.mustard};
   position: absolute;
   right: 0;
-  top: ${setRem(490)}
+  top: ${setRem(490)};
+  cursor: pointer;
 }
 
 .img-logo {

@@ -24,23 +24,22 @@ class Item extends React.Component {
         </div>
         <div className="item-content">
           <div className="item-date">
-            <span>Monday 10th</span>
-            <span>2:28 PM</span>
+            <span>{this.props.date}</span>
           </div>
           <div className="item-vertical-line"></div>
           <div className="item-destination">
             <FontAwesomeIcon icon={setIcon.plane} size="lg" className="item-destination-plane-icon"/>
             <div className="item-destination-info">
-              <span>Houston, TX, 33619</span>
+              <span>{this.props.origin}</span>
               <FontAwesomeIcon icon={setIcon.arrowDown} size="3x" className="item-destination-arrow-icon"/>
-              <span>Atlanta, GA, 30123</span>
+              <span>{this.props.destination}</span>
             </div>
           </div>
           <div className="item-vertical-line"></div>
           <div className="item-pricing">
             <FontAwesomeIcon icon={setIcon.truck} size="4x" flip="horizontal" className="item-pricing-truck-icon"/>
-            <span className="item-price">$250.00</span>
-            <span className="item-quantity">1</span>
+            <span className="item-price">{`$ ${this.props.amount}.00`}</span>
+            <span className="item-quantity">{this.props.quantity}</span>
           </div>
           <FontAwesomeIcon icon={setIcon.options} size="lg" className="item-options-icon"/>
         </div>

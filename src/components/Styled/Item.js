@@ -28,7 +28,7 @@ export const ItemBox = styled.div`
 
     .item-date {
       font-size: ${setRem(18)};
-      margin-top: ${setRem(25)};
+      margin-top: ${setRem(50)};
 
       span {
         display: block;
