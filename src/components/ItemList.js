@@ -47,10 +47,9 @@ class ItemList extends React.Component {
         { this.state.checked ? <FontAwesomeIcon icon={setIcon.check} size="3x" className="general-check-icon" onClick={this.toggleCheck}/>
         : <FontAwesomeIcon icon={setIcon.unCheck} size="3x" className="general-check-icon" onClick={this.toggleCheck}/>}
         <ItemsContainer>
-          { console.log(this.state.items)}
-          { this.state.items ? this.state.items.map((item) => <Item key={item.id} checked={this.state.checked} {...item}/>) : null }
+          { this.state.items ? this.state.items.map((item) =>  <Item key={item.id} checked={this.state.checked} {...item}/>) : null }
         </ItemsContainer>
-        <FontAwesomeIcon icon={setIcon.plus} className="add-icon" size="5x" onClick={this.addItem}/>
+        <FontAwesomeIcon icon={setIcon.plus} className="add-icon" size="5x"/>
       </>
     )
   }

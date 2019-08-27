@@ -1,0 +1,4 @@
+export const REQUEST_ITEMS = 'REQUEST_ITEMS'
+export const RECEIVE_ITEMS = 'RECEIVE_ITEMS'
+export const FILTER_ITEMS = 'FILTER_ITEMS'
+export const ERROR_ITEMS = 'ERROR_ITEMS'

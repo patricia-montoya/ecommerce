@@ -30,9 +30,9 @@ const Layout = styled.div`
 
 .add-icon {
   color: ${setColor.mustard};
-  position: absolute;
-  right: 0;
-  top: ${setRem(490)};
+  position: fixed;
+  right: ${setRem(20)};
+  bottom: ${setRem(20)};
   cursor: pointer;
 }
 
