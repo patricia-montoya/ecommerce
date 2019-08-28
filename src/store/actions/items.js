@@ -1,5 +1,5 @@
-import { REQUEST_ITEMS, RECEIVE_ITEMS, FILTER_ITEMS, ERROR_ITEMS } from './actionTypes'
-import { addItem, getItems } from '../../api/items'
+import { REQUEST_ITEMS, RECEIVE_ITEMS, ERROR_ITEMS } from './actionTypes'
+import { getItems } from '../../api/items'
 
 export const requestItems = () => ({
     type: REQUEST_ITEMS
@@ -15,13 +15,10 @@ export const catchErrorItems = (error) => ({
     payload: error
 })
 
-export const filterItems = () => ({
-    type: FILTER_ITEMS
-})
-
 export const fetchItems = () => (dispatch) => {
     dispatch(requestItems())
     getItems()
+    // .then((response) => console.log(Object.values(response.data)))
     .then((response) => dispatch(receiveItems(Object.values(response.data))))
     .catch((error) => dispatch(catchErrorItems(error)))
 }

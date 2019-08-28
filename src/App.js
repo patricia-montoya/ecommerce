@@ -1,6 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Home from './views/Home'
+import { Provider } from 'react-redux'
+import configureStore from './store/storeConfig/configureStore'
+
+
+import Home from './store/containers/Home'
 import Messages from './components/Messages'
 import WishList from './components/WishList'
 import Settings from './components/Settings'
@@ -16,11 +20,15 @@ function Routes() {
   </>
 }
 
+const store = configureStore()
+
 function App() {
   return (
-    <Router>
-      <Routes />
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Routes />
+      </Router>
+    </Provider>
   );
 }
 
