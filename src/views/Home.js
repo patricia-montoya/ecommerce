@@ -10,14 +10,12 @@ class Home extends React.Component {
     this.props.fetchItems()
   }
   
-  
   render() {
-    console.log(this.props)
     return (
       <>
         <MainLayout>
             <SearchInput position="absolute" top="0" right="0" width="30%"/>
-            <ItemList className="items-container" />
+            <ItemList className="items-container" {...this.props}/>
         </MainLayout>
         <Filters />
       </>

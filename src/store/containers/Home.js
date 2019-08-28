@@ -4,9 +4,9 @@ import { fetchItems } from '../actions/items'
 
 import Home from '../../views/Home'
 
-const mapStateToProps = ({ items }) => ({
-    items
-})
+const mapStateToProps = ({ data }) => ({
+    items: data
+  })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
     fetchItems
