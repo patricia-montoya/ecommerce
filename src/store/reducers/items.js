@@ -1,7 +1,7 @@
 import { REQUEST_ITEMS, RECEIVE_ITEMS, ERROR_ITEMS } from '../actions/actionTypes'
 import initialState from'./initialState'
 
-export default(state = initialState, action) => {
+export default(state = initialState.items, action) => {
     switch(action.type) {
         case REQUEST_ITEMS:
             return {...state, isFetching: true}

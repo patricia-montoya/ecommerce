@@ -7,12 +7,12 @@ import Filters from '../components/Filters'
 class Home extends React.Component {
   
   componentDidMount() {
-    console.log(this.props.fetchItems())
+    this.props.fetchItems()
   }
   
   
   render() {
-    const { items } = this.props
+    console.log(this.props)
     return (
       <>
         <MainLayout>

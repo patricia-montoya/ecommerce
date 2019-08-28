@@ -18,7 +18,6 @@ export const catchErrorItems = (error) => ({
 export const fetchItems = () => (dispatch) => {
     dispatch(requestItems())
     getItems()
-    // .then((response) => console.log(Object.values(response.data)))
     .then((response) => dispatch(receiveItems(Object.values(response.data))))
     .catch((error) => dispatch(catchErrorItems(error)))
 }
